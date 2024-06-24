@@ -14,7 +14,7 @@ const NAV_PREFIX_PATH=process.env["APICURIO_NAV_PREFIX_PATH"];
 const SHOW_MASTHEAD=process.env["APICURIO_SHOW_MASTHEAD"];
 const MASTHEAD_LABEL=process.env["APICURIO_MASTHEAD_LABEL"];
 const EDITORS_URL=process.env["APICURIO_EDITORS_URL"];
-
+const AUTH_CLIENT_SCOPES=process.env["APICURIO_AUTH_CLIENT_SCOPES"];
 const AUTH_TYPE=process.env["APICURIO_AUTH_TYPE"];
 const AUTH_URL=process.env["APICURIO_AUTH_URL"];
 const AUTH_CLIENT_ID=process.env["APICURIO_AUTH_CLIENT_ID"];
@@ -71,7 +71,7 @@ if (AUTH_TYPE === "oidc") {
         CONFIG.auth.options.redirectUri = AUTH_REDIRECT_URL;
     }
     if (AUTH_CLIENT_ID) {
-        CONFIG.auth.options.clientId = AUTH_CLIENT_ID_URL;
+        CONFIG.auth.options.clientId = AUTH_CLIENT_ID;
     }
     if (AUTH_CLIENT_SCOPES) {
         CONFIG.auth.options.scope = AUTH_CLIENT_SCOPES;

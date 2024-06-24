@@ -53,6 +53,11 @@ The following {studio} configuration options are available for each component ca
 |
 |`1.0.0`
 |Client credentials scope.
+|`quarkus.http.auth.basic`
+|`boolean`
+|`false`
+|`1.0.0`
+|Enable basic auth
 |`quarkus.oidc.auth-server-url`
 |`string`
 |
